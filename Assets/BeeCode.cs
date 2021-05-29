@@ -17,6 +17,7 @@ public class BeeCode : MonoBehaviour
 
      private void Update()
      {
+
          if(beeThrow && GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
          {
              time += Time.deltaTime;
@@ -44,6 +45,7 @@ public class BeeCode : MonoBehaviour
       GetComponent<Rigidbody2D>().AddForce(directionToPrimaryPosition * throwPower);
       GetComponent<Rigidbody2D>().gravityScale = 1;
       beeThrow = true;
+
     }
      
      private void OnMouseDrag()
