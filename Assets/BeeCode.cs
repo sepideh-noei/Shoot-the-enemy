@@ -18,14 +18,14 @@ public class BeeCode : MonoBehaviour
      private void Update()
      {
 
-         if(beeThrow && GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
+        if (beeThrow && GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
          {
              time += Time.deltaTime;
          }
 
-         if(transform.position.y > 10 || transform.position.y < -10 ||
-            transform.position.x > 10 || transform.position.x < -10 ||
-            time > 3)
+         if(transform.position.y > 20 || transform.position.y < -20 ||
+            transform.position.x > 20 || transform.position.x < -20 ||
+            time > 4)
          {
              string presentSceneName = SceneManager.GetActiveScene().name;
              SceneManager.LoadScene(presentSceneName);
