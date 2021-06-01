@@ -17,6 +17,8 @@ public class BeeCode : MonoBehaviour
 
      private void Update()
      {
+         GetComponent<LineRenderer>().SetPosition(0 , transform.position);
+         GetComponent<LineRenderer>().SetPosition(1 , primaryPosition); 
 
         if (beeThrow && GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
          {
@@ -35,6 +37,7 @@ public class BeeCode : MonoBehaviour
      private void OnMouseDown()
     {
         GetComponent<SpriteRenderer>().color = Color.yellow;
+        GetComponent<LineRenderer>().enabled = true;
     }
 
     private void OnMouseUp()
@@ -46,6 +49,7 @@ public class BeeCode : MonoBehaviour
       GetComponent<Rigidbody2D>().gravityScale = 1;
       beeThrow = true;
 
+      GetComponent<LineRenderer>().enabled = false;
     }
      
      private void OnMouseDrag()
