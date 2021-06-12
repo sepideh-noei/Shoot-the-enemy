@@ -25,9 +25,9 @@ public class BeeCode : MonoBehaviour
              time += Time.deltaTime;
          }
 
-         if(transform.position.y > 20 || transform.position.y < -20 ||
-            transform.position.x > 20 || transform.position.x < -20 ||
-            time > 4)
+         if(transform.position.y > 30 || transform.position.y < -30 ||
+            transform.position.x > 30 || transform.position.x < -30 ||
+            time > 1.8)
          {
              string presentSceneName = SceneManager.GetActiveScene().name;
              SceneManager.LoadScene(presentSceneName);
@@ -55,6 +55,7 @@ public class BeeCode : MonoBehaviour
      private void OnMouseDrag()
     {
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if(newPosition.x<= -4.3&& newPosition.y>=0.37)
         transform.position = new Vector3( newPosition.x , newPosition.y);
     }
 }
