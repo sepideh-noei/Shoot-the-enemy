@@ -22,8 +22,11 @@ public class LevelCode : MonoBehaviour
         }
         Debug.Log("you kill enemies");
 
+        
         nextLevelId++;
         string nextLevel = "level" + nextLevelId;
+        TotalPointCode.totalPoints += ScoreCode.scoreValue;
+        ScoreCode.scoreValue = 0;
         SceneManager.LoadScene(nextLevel);
     }
 }

@@ -11,6 +11,7 @@ public class EnemyCode : MonoBehaviour
         BeeCode bee = collision.collider.GetComponent<BeeCode>();
         if (bee != null)
         {
+            ScoreCode.scoreValue += 10;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
             return;
@@ -24,6 +25,7 @@ public class EnemyCode : MonoBehaviour
 
         if(collision.contacts[0].normal.y < -0.5)
         {
+            ScoreCode.scoreValue += 10;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

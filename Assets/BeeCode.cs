@@ -29,6 +29,7 @@ public class BeeCode : MonoBehaviour
             transform.position.x > 30 || transform.position.x < -30 ||
             time > 1.8)
          {
+             ScoreCode.scoreValue = 0;
              string presentSceneName = SceneManager.GetActiveScene().name;
              SceneManager.LoadScene(presentSceneName);
          }

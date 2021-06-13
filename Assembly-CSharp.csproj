@@ -68,6 +68,8 @@
     <Compile Include="Assets\EnemyCode.cs" />
     <Compile Include="Assets\LevelCode.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\ScoreCode.cs" />
+    <Compile Include="Assets\TotalPointCode.cs" />
     <Compile Include="Assets\r2.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
