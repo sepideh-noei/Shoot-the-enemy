@@ -630,6 +630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloudParticle: {fileID: 1898061445660352921, guid: 9f1e58e6ea9af0d4ab8f82990996caa3,
     type: 3}
+  scoreParticle: {fileID: 4672005703745871763, guid: 1f36ab4d6a5f79343a848217f7387c2d,
+    type: 3}
 --- !u!61 &659013312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1733,6 +1735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloudParticle: {fileID: 1898061445660352921, guid: 9f1e58e6ea9af0d4ab8f82990996caa3,
     type: 3}
+  scoreParticle: {fileID: 0}
 --- !u!61 &1728248706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2104,6 +2107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudParticle: {fileID: 1898061445660352921, guid: 9f1e58e6ea9af0d4ab8f82990996caa3,
+    type: 3}
+  scoreParticle: {fileID: 4672005703745871763, guid: 1f36ab4d6a5f79343a848217f7387c2d,
     type: 3}
 --- !u!1 &1985907444
 GameObject:

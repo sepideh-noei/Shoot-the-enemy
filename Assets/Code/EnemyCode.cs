@@ -5,14 +5,16 @@ using UnityEngine;
 public class EnemyCode : MonoBehaviour
 {
     [SerializeField] private GameObject cloudParticle;
+    [SerializeField] private GameObject scoreParticle;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         BeeCode bee = collision.collider.GetComponent<BeeCode>();
         if (bee != null)
         {
-            ScoreCode.scoreValue += 10;
+            ScoreCode.scoreValue += 100;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
+            Instantiate(scoreParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
             return;
         }
@@ -25,8 +27,9 @@ public class EnemyCode : MonoBehaviour
 
         if(collision.contacts[0].normal.y < -0.5)
         {
-            ScoreCode.scoreValue += 10;
+            ScoreCode.scoreValue += 100;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
+            Instantiate(scoreParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
