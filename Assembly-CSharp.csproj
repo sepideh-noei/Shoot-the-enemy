@@ -66,7 +66,9 @@
   <ItemGroup>
     <Compile Include="Assets\Code\BeeCode.cs" />
     <Compile Include="Assets\Code\EnemyCode.cs" />
+    <Compile Include="Assets\Code\LevelButton.cs" />
     <Compile Include="Assets\Code\LevelCode.cs" />
+    <Compile Include="Assets\Code\LevelSelecMenu.cs" />
     <Compile Include="Assets\Code\MainMenuCode.cs" />
     <Compile Include="Assets\Code\NewBehaviourScript.cs" />
     <Compile Include="Assets\Code\ScoreCode.cs" />
