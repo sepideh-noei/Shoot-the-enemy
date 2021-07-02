@@ -12,18 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: faa4956baf292564d99bda95495d10cc
   - enabled: 1
-    path: Assets/Scenes/MenuSteps.unity
-    guid: 89fd49fdc3aa6a44fb9f703776f2d0b3
-  - enabled: 1
-    path: Assets/Scenes/level1.unity
+    path: Assets/Scenes/morninglevel1.unity
     guid: 7f6a860725640314c8e8a3a1f80f42dc
   - enabled: 1
-    path: Assets/Scenes/level2.unity
-    guid: af5bc1e8324d1c84fb095a7b7502edb9
+    path: Assets/Scenes/morninglevel2.unity
+    guid: b270e229f2d47fa46ae2f510b9ace487
   - enabled: 1
-    path: Assets/Scenes/level3.unity
-    guid: 7984dd8edf4a24d4d82d072b47595d47
+    path: Assets/Scenes/morninglevel3.unity
+    guid: ad070410e909cb7459f410829a8b09b8
   - enabled: 1
-    path: Assets/Scenes/level4.unity
-    guid: 06a337dc959ba7444b3a230fbe879688
+    path: Assets/Scenes/morninglevel4.unity
+    guid: a6d72568377288d41a5f9806a99c8eb4
+  - enabled: 1
+    path: Assets/Scenes/morninglevel5.unity
+    guid: 254988a494c2d284cb4ef6c829c3851c
+  - enabled: 1
+    path: Assets/Scenes/nightlevel1.unity
+    guid: c35c0a76dc7c81445874b112cb3a8331
+  - enabled: 1
+    path: Assets/Scenes/nightlevel2.unity
+    guid: 3686794b96dd26c4f9224cd67af70c63
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel1.unity
+    guid: c2e217fb007511e4a9c707523fd87cf0
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel2.unity
+    guid: 435e5e1529d239c44a24f755547a07a2
   m_configObjects: {}
