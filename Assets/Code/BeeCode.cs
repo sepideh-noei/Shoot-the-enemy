@@ -9,10 +9,15 @@ public class BeeCode : MonoBehaviour
     private Vector3 primaryPosition;
     private bool beeThrow;
     private float time;
+    public Camera Vcam;
+    int drawCheck = 0;
 
-      private void Awake()
+    
+
+    private void Awake()
    {
-       primaryPosition = transform.position;
+        
+        primaryPosition = transform.position;
    }
 
      private void Update()
@@ -25,9 +30,9 @@ public class BeeCode : MonoBehaviour
              time += Time.deltaTime;
          }
 
-         if(transform.position.y > 30 || transform.position.y < -30 ||
-            transform.position.x > 30 || transform.position.x < -30 ||
-            time > 1.8)
+         if(transform.position.y > 20 || transform.position.y < -20 ||
+            transform.position.x > 17.8 || transform.position.x < -20 ||
+            time > 2)
          {
              ScoreCode.scoreValue = 0;
              string presentSceneName = SceneManager.GetActiveScene().name;
@@ -44,19 +49,36 @@ public class BeeCode : MonoBehaviour
     private void OnMouseUp()
     {
       GetComponent<SpriteRenderer>().color = Color.white;
-
-      Vector2 directionToPrimaryPosition = primaryPosition - transform.position;
+        
+        Vector2 directionToPrimaryPosition = primaryPosition - transform.position;
       GetComponent<Rigidbody2D>().AddForce(directionToPrimaryPosition * throwPower);
       GetComponent<Rigidbody2D>().gravityScale = 1;
       beeThrow = true;
+        Sound.PlaySound("shotBee");
+        GetComponent<LineRenderer>().enabled = false;
+        
+    }
 
-      GetComponent<LineRenderer>().enabled = false;
-    }
-     
-     private void OnMouseDrag()
+    private void OnMouseDrag()
     {
+        
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if(newPosition.x<= -4.3&& newPosition.y>=0.37)
-        transform.position = new Vector3( newPosition.x , newPosition.y);
+
+        if (newPosition.x <= -4.3 && newPosition.x >= -17.5 && newPosition.y >= 0.37)
+        {
+            transform.position = new Vector3(newPosition.x, newPosition.y);
+
+            if (drawCheck == 0)
+           {
+               Sound.PlaySound("drawBee");
+               drawCheck = 1;
+           }
+
+        }
+
+        
+
     }
+       
+    
 }

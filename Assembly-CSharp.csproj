@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CD2BD060-FF62-7C55-78B1-B191F3DAE9E9}</ProjectGuid>
+    <ProjectGuid>{118FFDFF-FCEA-1213-1CCB-27D964AA13D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.10.2.0</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.19f1</UnityVersion>
@@ -64,14 +64,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\Always.cs" />
+    <Compile Include="Assets\Code\BackCheck.cs" />
+    <Compile Include="Assets\Code\BackToMain.cs" />
     <Compile Include="Assets\Code\BeeCode.cs" />
+    <Compile Include="Assets\Code\BgMenuMusic.cs" />
+    <Compile Include="Assets\Code\BgSound.cs" />
+    <Compile Include="Assets\Code\Changecam.cs" />
+    <Compile Include="Assets\Code\ChapSel.cs" />
+    <Compile Include="Assets\Code\CrateSound.cs" />
     <Compile Include="Assets\Code\EnemyCode.cs" />
+    <Compile Include="Assets\Code\Exit.cs" />
+    <Compile Include="Assets\Code\Lev.cs" />
     <Compile Include="Assets\Code\LevelButton.cs" />
     <Compile Include="Assets\Code\LevelCode.cs" />
     <Compile Include="Assets\Code\LevelSelecMenu.cs" />
     <Compile Include="Assets\Code\MainMenuCode.cs" />
     <Compile Include="Assets\Code\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Code\OnClick.cs" />
+    <Compile Include="Assets\Code\OptionStatic.cs" />
+    <Compile Include="Assets\Code\ScaleToScreenSize.cs" />
     <Compile Include="Assets\Code\ScoreCode.cs" />
+    <Compile Include="Assets\Code\Sound.cs" />
     <Compile Include="Assets\Code\TotalPointCode.cs" />
     <Compile Include="Assets\Code\r2.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -271,6 +285,12 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -618,91 +638,91 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/shariaty_karshnasi/uni_term4/project/Shoot_the_enemy/Shoot the enemy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/USER/Documents/Shoot-the-enemy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

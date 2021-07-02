@@ -15,6 +15,7 @@ public class EnemyCode : MonoBehaviour
             ScoreCode.scoreValue += 100;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Instantiate(scoreParticle, transform.position, Quaternion.identity);
+             Sound.PlaySound("enemyDeath");
             Destroy(gameObject);
             return;
         }
@@ -30,6 +31,7 @@ public class EnemyCode : MonoBehaviour
             ScoreCode.scoreValue += 100;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Instantiate(scoreParticle, transform.position, Quaternion.identity);
+            Sound.PlaySound("enemyDeath");
             Destroy(gameObject);
         }
     }
