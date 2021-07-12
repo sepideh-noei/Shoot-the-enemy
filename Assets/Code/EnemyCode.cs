@@ -7,12 +7,23 @@ public class EnemyCode : MonoBehaviour
     [SerializeField] private GameObject cloudParticle;
     [SerializeField] private GameObject scoreParticle;
 
+    public void Start()
+    {
+        LevelCode.EnC = GameObject.FindGameObjectsWithTag("En").Length;
+    }
+
+    public void Update()
+    {
+        LevelCode.EnC = GameObject.FindGameObjectsWithTag("En").Length;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         BeeCode bee = collision.collider.GetComponent<BeeCode>();
         if (bee != null)
         {
             ScoreCode.scoreValue += 100;
+            Global.scoreGlobal = ScoreCode.scoreValue;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Instantiate(scoreParticle, transform.position, Quaternion.identity);
              Sound.PlaySound("enemyDeath");
@@ -29,6 +40,7 @@ public class EnemyCode : MonoBehaviour
         if(collision.contacts[0].normal.y < -0.5)
         {
             ScoreCode.scoreValue += 100;
+            Global.scoreGlobal = ScoreCode.scoreValue;
             Instantiate(cloudParticle, transform.position, Quaternion.identity);
             Instantiate(scoreParticle, transform.position, Quaternion.identity);
             Sound.PlaySound("enemyDeath");

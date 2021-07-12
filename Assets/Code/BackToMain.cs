@@ -21,11 +21,11 @@ public class BackToMain : MonoBehaviour
 
     void Update()
     {
-
+        
 
 
     }
-    void Click()
+    public void Click()
     {
         Global.back = true;
         

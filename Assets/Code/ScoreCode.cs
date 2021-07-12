@@ -19,3 +19,8 @@ public class ScoreCode : MonoBehaviour
         score.text = "Score: " + scoreValue;
     }
 }
+
+//public  class Global
+//{
+   // public int scoreGlobal = 0;
+//}

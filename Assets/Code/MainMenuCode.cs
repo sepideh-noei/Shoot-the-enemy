@@ -48,7 +48,8 @@ public class Global
     
     public static string Chapter = "";
     public static bool back = false;
-    
+    public static int timeS = 1;
+    public static int scoreGlobal = 0;
    
 }
 

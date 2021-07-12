@@ -24,8 +24,9 @@ public class Lev : MonoBehaviour
     void Play()
     {
         //BgSound.PlayBg();
-
+        Global.timeS = 0;
         SceneManager.LoadScene(Global.Chapter + tag);
+        
 
     }
 }

@@ -11,8 +11,8 @@ public class BeeCode : MonoBehaviour
     private float time;
     public Camera Vcam;
     int drawCheck = 0;
+    public GameObject StarMenueCanvas;
 
-    
 
     private void Awake()
    {
@@ -34,9 +34,12 @@ public class BeeCode : MonoBehaviour
             transform.position.x > 17.8 || transform.position.x < -20 ||
             time > 2)
          {
-             ScoreCode.scoreValue = 0;
-             string presentSceneName = SceneManager.GetActiveScene().name;
-             SceneManager.LoadScene(presentSceneName);
+             //ScoreCode.scoreValue = 0;
+            StarMenueCanvas.SetActive(true);
+            Time.timeScale = 0f;
+            Global.timeS = 1;
+            string presentSceneName = SceneManager.GetActiveScene().name;
+             //SceneManager.LoadScene(presentSceneName);
          }
      }
 
@@ -64,8 +67,8 @@ public class BeeCode : MonoBehaviour
         
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (newPosition.x <= -4.3 && newPosition.x >= -17.5 && newPosition.y >= 0.37)
-        {
+        //if (newPosition.x <= -4.3 && newPosition.x >= -17.5 && newPosition.y >= 0.37)
+        //{
             transform.position = new Vector3(newPosition.x, newPosition.y);
 
             if (drawCheck == 0)
@@ -74,7 +77,7 @@ public class BeeCode : MonoBehaviour
                drawCheck = 1;
            }
 
-        }
+       // }
 
         
 

@@ -9,22 +9,35 @@ public class LevelCode : MonoBehaviour
     private EnemyCode[] enemies;
     private float time;
     int checkSound = 1;
-
+    public GameObject PauseMenueCanvas;
+    public GameObject StarMenueCanvas;
+    public static int EnC;
     private void Start()
     {
+        
         GameObject.FindGameObjectWithTag("MusicMenu").GetComponent<BgMenuMusic>().StopMusic();
         GameObject.FindGameObjectWithTag("Music").GetComponent<BgSound>().PlayMusic();
+      
+
+
     }
     private void OnEnable()
     {
+        
         enemies = FindObjectsOfType<EnemyCode>();
         
-       
+
     }
 
     void Update()
     {
-       
+        
+        if (Global.timeS==0)
+        {
+            Time.timeScale = 1f;
+
+        }
+        
         foreach (EnemyCode enemy in enemies)
         {
             if (enemy != null)
@@ -44,12 +57,13 @@ public class LevelCode : MonoBehaviour
             
           //string nextLevel = Global.Chapter+"level" + nextLevelId;
             TotalPointCode.totalPoints += ScoreCode.scoreValue;
-            ScoreCode.scoreValue = 0;
+            //ScoreCode.scoreValue = 0;
             idSet++;
             if ((chapSet == "night" && idSet > 2) || (chapSet == "morning" && idSet > 5) || (chapSet == "evening" && idSet > 2))
             {
-                
-                SceneManager.LoadScene("Menu");
+                Time.timeScale = 0f;
+                Global.timeS = 1;
+                //SceneManager.LoadScene("Menu");
                 MainMenuCode.ActiveStep();
                 GameObject.FindGameObjectWithTag("Music").GetComponent<BgSound>().StopMusic();
                
@@ -58,9 +72,12 @@ public class LevelCode : MonoBehaviour
 
             else
             {
-                
-                SceneManager.LoadScene(chapSet + "level" + idSet);
-                
+               
+                Time.timeScale = 0f;
+                StarMenueCanvas.SetActive(true);
+                Global.timeS = 1;
+                //SceneManager.LoadScene(chapSet + "level" + idSet);
+
             }
 
         }

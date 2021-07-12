@@ -10,6 +10,7 @@ TagManager:
   - Music
   - MusicMenu
   - Mute
+  - En
   layers:
   - Default
   - TransparentFX
