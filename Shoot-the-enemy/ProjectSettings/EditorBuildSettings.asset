@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d1744548dc82d68488d67ef51e437717
+  - enabled: 1
+    path: Assets/Scenes/morninglevel1.unity
+    guid: 7f6a860725640314c8e8a3a1f80f42dc
+  - enabled: 1
+    path: Assets/Scenes/morninglevel2.unity
+    guid: b270e229f2d47fa46ae2f510b9ace487
+  - enabled: 1
+    path: Assets/Scenes/morninglevel3.unity
+    guid: ad070410e909cb7459f410829a8b09b8
+  - enabled: 1
+    path: Assets/Scenes/morninglevel4.unity
+    guid: a6d72568377288d41a5f9806a99c8eb4
+  - enabled: 1
+    path: Assets/Scenes/morninglevel5.unity
+    guid: 254988a494c2d284cb4ef6c829c3851c
+  - enabled: 1
+    path: Assets/Scenes/morninglevel6.unity
+    guid: ac4e03ef402e5d6499c13610f514bbe6
+  - enabled: 1
+    path: Assets/Scenes/morninglevel7.unity
+    guid: 04f22928f742eac4b957662ec6c7592e
+  - enabled: 1
+    path: Assets/Scenes/morninglevel8.unity
+    guid: fc464fb35b309ec44a279d251d181c79
+  - enabled: 1
+    path: Assets/Scenes/morninglevel9.unity
+    guid: 90f6bf78b5a044245871733de8ae3df0
+  - enabled: 1
+    path: Assets/Scenes/morninglevel10.unity
+    guid: 84a7248060ffde545b6e3fd3d4c1e891
+  - enabled: 1
+    path: Assets/Scenes/nightlevel1.unity
+    guid: c35c0a76dc7c81445874b112cb3a8331
+  - enabled: 1
+    path: Assets/Scenes/nightlevel2.unity
+    guid: 3686794b96dd26c4f9224cd67af70c63
+  - enabled: 1
+    path: Assets/Scenes/nightlevel3.unity
+    guid: 586a019a87bba44448fa7cdc14e4bd58
+  - enabled: 1
+    path: Assets/Scenes/nightlevel4.unity
+    guid: 4499d6bb6d76de8428171b5da749c8b8
+  - enabled: 1
+    path: Assets/Scenes/nightlevel5.unity
+    guid: 73e3676ca7dbc114183427247ace8760
+  - enabled: 1
+    path: Assets/Scenes/nightlevel6.unity
+    guid: 00700fd4c722be34091a2a65032eec79
+  - enabled: 1
+    path: Assets/Scenes/nightlevel7.unity
+    guid: 9a482d84d09a78d4eab57a0206adc3cd
+  - enabled: 1
+    path: Assets/Scenes/nightlevel8.unity
+    guid: ac2d1d120a71aaa42b727499621e47ba
+  - enabled: 1
+    path: Assets/Scenes/nightlevel9.unity
+    guid: 976a5216f5fd6f14b8d439b1a4eb7228
+  - enabled: 1
+    path: Assets/Scenes/nightlevel10.unity
+    guid: 64d14257526433b4986a915f339b3939
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel1.unity
+    guid: c2e217fb007511e4a9c707523fd87cf0
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel2.unity
+    guid: 435e5e1529d239c44a24f755547a07a2
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel3.unity
+    guid: be1c0245775c79142a580df45b6a306c
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel4.unity
+    guid: 6a7493754a4baf44db8970445cf19958
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel5.unity
+    guid: 81f633120da8ba34f9f68f6e18ec690b
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel6.unity
+    guid: 01413fabb695bda47b08ac63b0813899
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel7.unity
+    guid: 7cdcf24243784f942b09d12db77abc85
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel8.unity
+    guid: 928107069e48cab4f865f488d6ec7b9b
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel9.unity
+    guid: 273c142d5bb6b2a42a3c4e3354c7bf5a
+  - enabled: 1
+    path: Assets/Scenes/eveninglevel10.unity
+    guid: c7ecfb3fde5cec44989efa9bd67bcb97
+  m_configObjects: {}

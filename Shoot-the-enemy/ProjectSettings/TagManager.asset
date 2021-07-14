@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - morningchap
+  - eveningchap
+  - nightchap
+  - Music
+  - MusicMenu
+  - Mute
+  - En
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Cm1
+  - Cm2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Particle
+    uniqueID: 4088836969
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: LayerUI
+    uniqueID: 1630329567
+    locked: 0
